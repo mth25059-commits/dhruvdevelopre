@@ -20,11 +20,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
-    <!-- Icons -->
+     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Emergency Preloader Kill Switch -->
+    <script>
+        setTimeout(function() {
+            var p = document.getElementById('preloader');
+            if (p) {
+                p.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }, 5000);
+    </script>
 </head>
 <body>
     <!-- Preloader -->
