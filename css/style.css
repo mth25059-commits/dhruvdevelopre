@@ -2689,3 +2689,20 @@ body {
         animation: none;
     }
 }
+
+/* ============================================
+   EMERGENCY: Force hide preloader after 5s
+   ============================================ */
+@media (prefers-reduced-motion: no-preference) {
+    .preloader {
+        animation: forceHide 0.8s 5s forwards;
+    }
+    
+    @keyframes forceHide {
+        to {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    }
+}
