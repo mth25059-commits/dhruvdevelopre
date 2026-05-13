@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dhruv - Web Developer, Designer & AI Automation Specialist. Building world-class digital experiences.">
+    <meta name="keywords" content="web developer, web designer, AI automation, WordPress, VPS, portfolio">
+    <meta name="author" content="Dhruv">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dhruv - Developer & Designer">
+    <meta property="og:description" content="Building digital experiences that convert">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dhruvdeveloper.me">
+    
+    <title>Dhruv — Developer & Designer | dhruvdeveloper.me</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-text">
+                <span class="char">D</span>
+                <span class="char">H</span>
+                <span class="char">r</span>
+                <span class="char">u</span>
+                <span class="char">v</span>
+            </div>
+            <div class="preloader-subtitle">
+                <span class="word">Developer</span>
+                <span class="separator">/</span>
+                <span class="word">Designer</span>
+                <span class="separator">/</span>
+                <span class="word">Automator</span>
+            </div>
+            <div class="preloader-progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="preloader-counter" id="counter">0%</div>
+        </div>
+        <div class="preloader-glitch" id="glitch"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-wrapper" id="cursorWrapper">
+        <div class="cursor-dot" id="cursorDot"></div>
+        <div class="cursor-circle" id="cursorCircle"></div>
+        <div class="cursor-trail" id="cursorTrail"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo" data-magnetic>
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">DHruv</span>
+                <span class="logo-bracket">]</span>
+                <span class="logo-dot">.</span>
+            </a>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#hero" class="nav-link" data-magnetic>
+                            <span class="nav-link-num">01</span>
+                            <span class="nav-link-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#work" class="nav-link" data-magnetic>
+                            <span class="nav-link-num">02</span>
+                            <span class="nav-link-text">Work</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link" data-magnetic>
+                            <span class="nav-link-num">03</span>
+                            <span class="nav-link-text">Services</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-magnetic>
+                            <span class="nav-link-num">04</span>
+                            <span class="nav-link-text">About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-magnetic>
+                            <span class="nav-link-num">05</span>
+                            <span class="nav-link-text">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-small btn-outline" data-magnetic>
+                    <span>Let's Talk</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-bg"></div>
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-list">
+                <li><a href="#hero" class="mobile-nav-link" data-text="Home">Home</a></li>
+                <li><a href="#work" class="mobile-nav-link" data-text="Work">Work</a></li>
+                <li><a href="#services" class="mobile-nav-link" data-text="Services">Services</a></li>
+                <li><a href="#about" class="mobile-nav-link" data-text="About">About</a></li>
+                <li><a href="#contact" class="mobile-nav-link" data-text="Contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-footer">
+                <div class="mobile-contact">
+                    <a href="mailto:dxruxx@gmail.com">dxruxx@gmail.com</a>
+                    <a href="tel:+91954093239">+91 95409 3239</a>
+                </div>
+                <div class="mobile-social">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main" id="main">
+        
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-canvas-container" id="heroCanvas"></div>
+            <div class="hero-noise"></div>
+            <div class="hero-vignette"></div>
+            
+            <div class="hero-content">
+                <div class="hero-badge" data-parallax="0.5">
+                    <div class="badge-pulse"></div>
+                    <span class="badge-text">Available for Projects</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line" data-parallax="0.3">
+                        <span class="title-word">I</span>
+                        <span class="title-word">build</span>
+                    </span>
+                    <span class="title-line title-line-gradient" data-parallax="0.2">
+                        <span class="title-word title-word-gradient">digital</span>
+                    </span>
+                    <span class="title-line" data-parallax="0.1">
+                        <span class="title-word">experiences</span>
+                    </span>
+                </h1>
+                
+                <p class="hero-description" data-parallax="0.4">
+                    Web Design <span class="text-separator">×</span> AI Automation <span class="text-separator">×</span> WordPress <span class="text-separator">×</span> VPS
+                    <br>
+                    <span class="hero-subtext">Crafting pixel-perfect, high-performance websites for businesses that want to stand out.</span>
+                </p>
+                
+                <div class="hero-actions" data-parallax="0.5">
+                    <a href="#work" class="btn btn-primary btn-large" data-magnetic>
+                        <span class="btn-text">View My Work</span>
+                        <span class="btn-icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </span>
+                        <div class="btn-ripple"></div>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-large" data-magnetic>
+                        <span class="btn-text">Get in Touch</span>
+                        <span class="btn-icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </a>
+                </div>
+                
+                <div class="hero-scroll" data-parallax="0.6">
+                    <div class="scroll-indicator">
+                        <div class="scroll-mouse">
+                            <div class="scroll-wheel"></div>
+                        </div>
+                        <span class="scroll-text">Scroll to explore</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-block" data-parallax="0.3">
+                    <span class="stat-num" data-count="4">0</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-block" data-parallax="0.4">
+                    <span class="stat-num" data-count="95">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Performance Score</span>
+                </div>
+                <div class="stat-block" data-parallax="0.5">
+                    <span class="stat-num" data-count="100">0</span>
+                    <span class="stat-suffix">%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee Section -->
+        <section class="marquee-section">
+            <div class="marquee-wrapper">
+                <div class="marquee-track" id="marqueeTrack1">
+                    <span class="marquee-item">React</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">Three.js</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">WordPress</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">Telegram Bots</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">AI Automation</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">VPS</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">WebGL</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">GSAP</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">Next.js</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">Tailwind</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">Node.js</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">Docker</span>
+                    <span class="marquee-separator">✦</span>
+                    <!-- Duplicate for seamless loop -->
+                    <span class="marquee-item">React</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">Three.js</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">WordPress</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">Telegram Bots</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">AI Automation</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">VPS</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">WebGL</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">GSAP</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">Next.js</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">Tailwind</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">Node.js</span>
+                    <span class="marquee-separator">✦</span>
+                    <span class="marquee-item">Docker</span>
+                    <span class="marquee-separator">✦</span>
+                </div>
+            </div>
+            <div class="marquee-wrapper marquee-wrapper-reverse">
+                <div class="marquee-track marquee-track-reverse" id="marqueeTrack2">
+                    <span class="marquee-item marquee-item-alt">UI/UX Design</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <span class="marquee-item marquee-item-alt">Brand Identity</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <span class="marquee-item marquee-item-alt">E-Commerce</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <span class="marquee-item marquee-item-alt">SEO</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <span class="marquee-item marquee-item-alt">Performance</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <span class="marquee-item marquee-item-alt">Security</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <span class="marquee-item marquee-item-alt">CI/CD</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <span class="marquee-item marquee-item-alt">API Integration</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <!-- Duplicate -->
+                    <span class="marquee-item marquee-item-alt">UI/UX Design</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <span class="marquee-item marquee-item-alt">Brand Identity</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <span class="marquee-item marquee-item-alt">E-Commerce</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <span class="marquee-item marquee-item-alt">SEO</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <span class="marquee-item marquee-item-alt">Performance</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <span class="marquee-item marquee-item-alt">Security</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <span class="marquee-item marquee-item-alt">CI/CD</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                    <span class="marquee-item marquee-item-alt">API Integration</span>
+                    <span class="marquee-separator marquee-separator-alt">◈</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section class="work" id="work">
+            <div class="section-header">
+                <div class="section-eyebrow">
+                    <span class="eyebrow-line"></span>
+                    <span class="eyebrow-text">Selected Work</span>
+                </div>
+                <h2 class="section-title">
+                    Projects that<br>
+                    <span class="title-highlight">speak for themselves</span>
+                </h2>
+                <p class="section-desc">Medical, pet care, and professional portfolios — built with precision and purpose.</p>
+            </div>
+            
+            <div class="work-grid">
+                <!-- Project 1 -->
+                <article class="work-card" data-tilt>
+                    <div class="work-card-visual">
+                        <div class="work-card-bg" style="background: linear-gradient(135deg, #1e3a5f 0%, #0d2137 100%);">
+                            <div class="work-card-pattern"></div>
+                        </div>
+                        <div class="work-card-content">
+                            <span class="work-card-num">01</span>
+                            <div class="work-card-tags">
+                                <span class="tag">Web Design</span>
+                                <span class="tag">WordPress</span>
+                                <span class="tag">Medical</span>
+                            </div>
+                        </div>
+                        <div class="work-card-overlay">
+                            <div class="work-card-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card-info">
+                        <h3 class="work-card-title">Cure Eye Clinic</h3>
+                        <p class="work-card-desc">NABH-accredited eye care platform with appointment booking, doctor profiles, and service showcases for Delhi NCR's leading ophthalmologists.</p>
+                        <div class="work-card-meta">
+                            <div class="work-card-stats">
+                                <span><i class="fas fa-bolt"></i> 2.1s load</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 96 score</span>
+                            </div>
+                            <a href="https://cure-of-eyes.vercel.app/" target="_blank" class="work-card-link" data-magnetic>
+                                <span>Live Site</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="work-card" data-tilt>
+                    <div class="work-card-visual">
+                        <div class="work-card-bg" style="background: linear-gradient(135deg, #1a472a 0%, #0d2818 100%);">
+                            <div class="work-card-pattern pattern-2"></div>
+                        </div>
+                        <div class="work-card-content">
+                            <span class="work-card-num">02</span>
+                            <div class="work-card-tags">
+                                <span class="tag tag-alt">Brand Identity</span>
+                                <span class="tag tag-alt">UI/UX</span>
+                                <span class="tag tag-alt">Web Design</span>
+                            </div>
+                        </div>
+                        <div class="work-card-overlay">
+                            <div class="work-card-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card-info">
+                        <h3 class="work-card-title">PureVision Eye Care</h3>
+                        <p class="work-card-desc">Premium Gurugram-based eye care brand. Elegant design language with AI-powered diagnostics integration and seamless patient flow.</p>
+                        <div class="work-card-meta">
+                            <div class="work-card-stats">
+                                <span><i class="fas fa-mobile-alt"></i> 100% responsive</span>
+                                <span><i class="fas fa-search"></i> SEO optimized</span>
+                            </div>
+                            <a href="https://purevision-virid.vercel.app/" target="_blank" class="work-card-link" data-magnetic>
+                                <span>Live Site</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="work-card" data-tilt>
+                    <div class="work-card-visual">
+                        <div class="work-card-bg" style="background: linear-gradient(135deg, #5a1a3a 0%, #2d0d1d 100%);">
+                            <div class="work-card-pattern pattern-3"></div>
+                        </div>
+                        <div class="work-card-content">
+                            <span class="work-card-num">03</span>
+                            <div class="work-card-tags">
+                                <span class="tag tag-accent">Web Design</span>
+                                <span class="tag tag-accent">Automation</span>
+                                <span class="tag tag-accent">Pet Care</span>
+                            </div>
+                        </div>
+                        <div class="work-card-overlay">
+                            <div class="work-card-icon">
+                                <i class="fas fa-paw"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card-info">
+                        <h3 class="work-card-title">Vet Pulse Pet Clinic</h3>
+                        <p class="work-card-desc">24/7 pet care platform with emergency booking, vaccination tracking, and WhatsApp automation for 5000+ pet parents.</p>
+                        <div class="work-card-meta">
+                            <div class="work-card-stats">
+                                <span><i class="fas fa-users"></i> 5000+ users</span>
+                                <span><i class="fas fa-robot"></i> AI integrated</span>
+                            </div>
+                            <a href="https://petvet-lilac.vercel.app/" target="_blank" class="work-card-link" data-magnetic>
+                                <span>Live Site</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="work-card" data-tilt>
+                    <div class="work-card-visual">
+                        <div class="work-card-bg" style="background: linear-gradient(135deg, #2a1a5a 0%, #150d2d 100%);">
+                            <div class="work-card-pattern pattern-4"></div>
+                        </div>
+                        <div class="work-card-content">
+                            <span class="work-card-num">04</span>
+                            <div class="work-card-tags">
+                                <span class="tag tag-gold">Portfolio</span>
+                                <span class="tag tag-gold">WordPress</span>
+                                <span class="tag tag-gold">ENT</span>
+                            </div>
+                        </div>
+                        <div class="work-card-overlay">
+                            <div class="work-card-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card-info">
+                        <h3 class="work-card-title">Dr. Vivek Gogia</h3>
+                        <p class="work-card-desc">Board-certified ENT specialist portfolio with microscopic surgery showcases, cochlear implant info, and patient consultation funnel.</p>
+                        <div class="work-card-meta">
+                            <div class="work-card-stats">
+                                <span><i class="fas fa-calendar-check"></i> 200+ bookings</span>
+                                <span><i class="fas fa-star"></i> 4.9 rating</span>
+                            </div>
+                            <a href="https://dr-vivek-gogia.vercel.app/" target="_blank" class="work-card-link" data-magnetic>
+                                <span>Live Site</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="services-bg">
+                <div class="services-grid-bg"></div>
+            </div>
+            
+            <div class="section-header">
+                <div class="section-eyebrow">
+                    <span class="eyebrow-line"></span>
+                    <span class="eyebrow-text">What I Do</span>
+                </div>
+                <h2 class="section-title">
+                    Skills that<br>
+                    <span class="title-highlight">drive results</span>
+                </h2>
+                <p class="section-desc">From pixel-perfect design to server deployment — I handle the full stack.</p>
+            </div>
+
+            <div class="services-list">
+                <!-- Service 1 -->
+                <div class="service-item" data-reveal>
+                    <div class="service-num">01</div>
+                    <div class="service-content">
+                        <div class="service-icon-wrap">
+                            <div class="service-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                        </div>
+                        <div class="service-text">
+                            <h3 class="service-title">Web Design</h3>
+                            <p class="service-desc">Awwwards-level aesthetics with conversion-focused UX. From Figma prototypes to live, breathing websites that users love and businesses profit from.</p>
+                            <ul class="service-features">
+                                <li>UI/UX Design</li>
+                                <li>Responsive Design</li>
+                                <li>Prototyping</li>
+                                <li>Design Systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-item" data-reveal>
+                    <div class="service-num">02</div>
+                    <div class="service-content">
+                        <div class="service-icon-wrap">
+                            <div class="service-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                        <div class="service-text">
+                            <h3 class="service-title">AI & TG Automation</h3>
+                            <p class="service-desc">Telegram bots, AI workflows, n8n/Zapier integrations. Put your business on autopilot with smart automation systems that save hours every day.</p>
+                            <ul class="service-features">
+                                <li>Telegram Bots</li>
+                                <li>AI Workflows</li>
+                                <li>n8n / Zapier</li>
+                                <li>ChatGPT Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-item" data-reveal>
+                    <div class="service-num">03</div>
+                    <div class="service-content">
+                        <div class="service-icon-wrap">
+                            <div class="service-icon">
+                                <i class="fab fa-wordpress"></i>
+                            </div>
+                        </div>
+                        <div class="service-text">
+                            <h3 class="service-title">WordPress Development</h3>
+                            <p class="service-desc">Custom themes, WooCommerce, speed optimization. 90+ PageSpeed scores guaranteed with clean, maintainable code that scales with your business.</p>
+                            <ul class="service-features">
+                                <li>Custom Themes</li>
+                                <li>WooCommerce</li>
+                                <li>Speed Optimization</li>
+                                <li>Plugin Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-item" data-reveal>
+                    <div class="service-num">04</div>
+                    <div class="service-content">
+                        <div class="service-icon-wrap">
+                            <div class="service-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                        </div>
+                        <div class="service-text">
+                            <h3 class="service-title">VPS & Deployment</h3>
+                            <p class="service-desc">Server setup, CI/CD, Docker, SSL, security hardening. Intermediate knowledge but battle-tested in production environments with 99.9% uptime.</p>
+                            <ul class="service-features">
+                                <li>Server Setup</li>
+                                <li>Docker & CI/CD</li>
+                                <li>SSL & Security</li>
+                                <li>Monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process" id="process">
+            <div class="section-header">
+                <div class="section-eyebrow">
+                    <span class="eyebrow-line"></span>
+                    <span class="eyebrow-text">How I Work</span>
+                </div>
+                <h2 class="section-title">
+                    My process is<br>
+                    <span class="title-highlight">simple & effective</span>
+                </h2>
+            </div>
+
+            <div class="process-timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="process-step" data-reveal>
+                    <div class="step-num">01</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 class="step-title">Discovery</h3>
+                        <p class="step-desc">Understanding your goals, audience, and competition. Deep dive into requirements and project scope.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-reveal>
+                    <div class="step-num">02</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h3 class="step-title">Design</h3>
+                        <p class="step-desc">Wireframes, mockups, and interactive prototypes. Iterative design process with your feedback.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-reveal>
+                    <div class="step-num">03</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="step-title">Development</h3>
+                        <p class="step-desc">Clean, semantic code with modern technologies. Performance-first approach with best practices.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-reveal>
+                    <div class="step-num">04</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="step-title">Launch</h3>
+                        <p class="step-desc">Deployment, testing, and optimization. Post-launch support and maintenance packages.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Stats Section -->
+        <section class="about" id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span class="eyebrow-text">About Me</span>
+                    </div>
+                    <h2 class="section-title">
+                        Passionate about<br>
+                        <span class="title-highlight">creating impact</span>
+                    </h2>
+                    <p class="about-desc">
+                        I'm Dhruv, a developer and designer based in India. I specialize in building high-performance websites and automation systems that help businesses grow. With expertise in web design, AI automation, WordPress, and VPS management, I deliver complete digital solutions.
+                    </p>
+                    <p class="about-desc">
+                        Every project is an opportunity to push boundaries and create something extraordinary. I believe in clean code, thoughtful design, and measurable results.
+                    </p>
+                    <div class="about-actions">
+                        <a href="#contact" class="btn btn-primary" data-magnetic>
+                            <span>Start a Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="mailto:dxruxx@gmail.com" class="btn btn-text" data-magnetic>
+                            <span>dxruxx@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="about-card" data-tilt>
+                        <div class="about-card-inner">
+                            <div class="about-card-front">
+                                <div class="about-avatar">
+                                    <div class="avatar-ring"></div>
+                                    <div class="avatar-ring avatar-ring-2"></div>
+                                    <div class="avatar-initials">DH</div>
+                                </div>
+                                <h3 class="about-name">Dhruv</h3>
+                                <p class="about-role">Full Stack Developer</p>
+                                <div class="about-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-floating about-floating-1">
+                        <i class="fas fa-code"></i>
+                        <span>Clean Code</span>
+                    </div>
+                    <div class="about-floating about-floating-2">
+                        <i class="fas fa-palette"></i>
+                        <span>Pixel Perfect</span>
+                    </div>
+                    <div class="about-floating about-floating-3">
+                        <i class="fas fa-rocket"></i>
+                        <span>Fast Delivery</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card" data-reveal>
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                </div>
+                <div class="stat-card" data-reveal>
+                    <div class="stat-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-count="95">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Lighthouse Score</span>
+                    </div>
+                </div>
+                <div class="stat-card" data-reveal>
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-count="2">0</span>
+                        <span class="stat-suffix">.3s</span>
+                        <span class="stat-label">Avg Load Time</span>
+                    </div>
+                </div>
+                <div class="stat-card" data-reveal>
+                    <div class="stat-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-count="100">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="section-header">
+                <div class="section-eyebrow">
+                    <span class="eyebrow-line"></span>
+                    <span class="eyebrow-text">Testimonials</span>
+                </div>
+                <h2 class="section-title">
+                    What clients<br>
+                    <span class="title-highlight">say about me</span>
+                </h2>
+            </div>
+
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonials-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card" data-reveal>
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            Dhruv delivered our eye clinic website ahead of schedule. The design is stunning and appointments increased by 40% within the first month. Highly recommended!
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>RS</span>
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Dr. Rajesh Sharma</h4>
+                                <p class="author-role">Director, PureVision Eye Care</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card" data-reveal>
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            The automation system Dhruv built for our pet clinic handles 500+ appointments monthly without any manual intervention. Game changer for our business!
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar author-avatar-alt">
+                                <span>VP</span>
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Vikram Patel</h4>
+                                <p class="author-role">Founder, Vet Pulse Clinic</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card" data-reveal>
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            Professional, responsive, and incredibly talented. Dhruv understood our vision perfectly and translated it into a website that exceeded all expectations.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar author-avatar-alt2">
+                                <span>VG</span>
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Dr. Vivek Gogia</h4>
+                                <p class="author-role">ENT Specialist, Delhi NCR</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials-nav">
+                    <button class="testimonial-btn prev-btn" id="prevBtn" aria-label="Previous testimonial">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <div class="testimonials-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-btn next-btn" id="nextBtn" aria-label="Next testimonial">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="contact-bg">
+                <div class="contact-glow"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span class="eyebrow-text">Get In Touch</span>
+                    </div>
+                    <h2 class="section-title">
+                        Let's build something<br>
+                        <span class="title-highlight">extraordinary</span>
+                    </h2>
+                    <p class="contact-desc">
+                        Have a project in mind? Let's discuss how we can bring your vision to life. I'm currently available for freelance projects and collaborations.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:dxruxx@gmail.com" class="contact-method" data-magnetic>
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">dxruxx@gmail.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+91954093239" class="contact-method" data-magnetic>
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Phone</span>
+                                <span class="method-value">+91 95409 3239</span>
+                            </div>
+                        </a>
+                        
+                        <div class="contact-method" data-magnetic>
+                            <div class="method-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Website</span>
+                                <span class="method-value">dhruvdeveloper.me</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <span class="social-label">Follow me</span>
+                        <div class="social-links">
+                            <a href="#" class="social-link" data-magnetic aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" data-magnetic aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" data-magnetic aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" data-magnetic aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service Needed</label>
+                            <select id="service" class="form-select" required>
+                                <option value="">Select a service</option>
+                                <option value="web-design">Web Design</option>
+                                <option value="ai-automation">AI / TG Automation</option>
+                                <option value="wordpress">WordPress Development</option>
+                                <option value="vps">VPS & Deployment</option>
+                                <option value="full-package">Full Package</option>
+                            </select>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Budget Range</label>
+                            <select id="budget" class="form-select">
+                                <option value="">Select budget</option>
+                                <option value="5k-15k">₹5,000 - ₹15,000</option>
+                                <option value="15k-30k">₹15,000 - ₹30,000</option>
+                                <option value="30k-50k">₹30,000 - ₹50,000</option>
+                                <option value="50k+">₹50,000+</option>
+                            </select>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <div class="form-group form-group-full">
+                            <label for="message" class="form-label">Project Details</label>
+                            <textarea id="message" class="form-textarea" placeholder="Tell me about your project, goals, and timeline..." required></textarea>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit" data-magnetic>
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </span>
+                            <div class="btn-loader">
+                                <div class="loader-spinner"></div>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-bracket">[</span>
+                        <span class="logo-text">DHruv</span>
+                        <span class="logo-bracket">]</span>
+                    </a>
+                    <p class="footer-tagline">Building digital experiences that matter.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Navigation</h4>
+                        <ul class="footer-col-list">
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Services</h4>
+                        <ul class="footer-col-list">
+                            <li><a href="#services">Web Design</a></li>
+                            <li><a href="#services">AI Automation</a></li>
+                            <li><a href="#services">WordPress</a></li>
+                            <li><a href="#services">VPS Setup</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Connect</h4>
+                        <ul class="footer-col-list">
+                            <li><a href="mailto:dxruxx@gmail.com">dxruxx@gmail.com</a></li>
+                            <li><a href="tel:+91954093239">+91 95409 3239</a></li>
+                            <li><a href="https://dhruvdeveloper.me">dhruvdeveloper.me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2026 Dhruv. All rights reserved. Built with 
+                    <i class="fas fa-heart"></i> and lots of 
+                    <i class="fas fa-coffee"></i>
+                </p>
+                <div class="footer-backtop" id="backToTop" data-magnetic>
+                    <span>Back to top</span>
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="toast-content">
+            <h4 class="toast-title">Message Sent!</h4>
+            <p class="toast-desc">I'll get back to you within 24 hours.</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
